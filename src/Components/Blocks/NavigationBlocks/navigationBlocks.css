@@ -1,0 +1,24 @@
+.navigation-blocks{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left:40px;
+    margin:40px;
+}
+.navigation-blocks a{
+    color:#87909F;
+    text-decoration: none;
+    font-size: 18px;;
+}
+.navigation-blocks .active{
+    color:#3D85FD;
+}
+.navigation-blocks-image-holder{
+    height:18.65px;
+    width: 18.65px;
+    margin-right: 20px;
+}
+.navigation-blocks-image-holder img{
+    height: 100%;
+    width: 100%;
+}

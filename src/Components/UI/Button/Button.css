@@ -1,0 +1,15 @@
+.button-type-1{
+    width:150px;
+    height:40px;
+    background-color: #3D85FD;
+    border:0px;
+    color:#fff;
+    cursor: pointer;
+}
+.button-type-1:focus{
+    outline: none;;
+}
+.button-type-small{
+    height: 35px;
+    width: 75px;
+}

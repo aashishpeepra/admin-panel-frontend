@@ -1,0 +1,47 @@
+.tableui {
+    background-color: #fff;
+    margin:auto;
+    margin-top:20px;
+}
+
+.tableui,.tableui  th, .tableui  td{
+    
+   border: 1px solid rgb(112, 112, 112,0.3);
+   border-collapse: collapse;
+}
+.tableui th ,.tableui td{
+    width:100px;
+    height: 100%;
+    
+}
+.tableui th{
+    font-weight: 0;
+    text-align: left;
+    padding-left:10px;
+    height: 50px;
+}
+.tableui td{
+    color:rgb(0, 0, 0,0.5)
+}
+.tableui td .td-inner{
+    margin:0px 0px;
+    padding:10px 0px;
+    /* border-top: 1px solid rgb(112, 112, 112,0.3);
+    border-bottom: 1px solid rgb(112, 112, 112,0.3); */
+}
+.tableui tfoot {
+    background-color: rgb(224, 234, 250,0.7);
+    
+}
+.tableui tfoot th{
+    text-align: center;
+    font-weight: normal;
+    color: rgb(0, 0, 0,0.5)
+}
+/* .tableui tr{
+    min-height: 100px;
+    display: inline-block;
+}
+.tableui tr{
+    display: block
+} */

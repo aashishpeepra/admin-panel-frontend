@@ -1,0 +1,29 @@
+.table-bottom{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    padding:0px 30px;
+}
+.table-bottom-left{
+    float: left;
+}
+.table-bottom-right{
+    float:right
+}
+.table-bottom-right button{
+    background-color:#fff;
+    color:#111;
+    width:100px;
+    height:36px;
+    border:1px solid rgb(112, 112, 112,0.3);
+    font-weight: 700;
+    
+}
+.table-bottom-right span{
+    padding:10px 17.5px;
+    margin:0px 20px;
+    background-color: #3D85FD;
+    margin-top:0px;
+    color:#fff;
+}
