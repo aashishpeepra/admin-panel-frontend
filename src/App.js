@@ -26,8 +26,8 @@ function App() {
           <NavigationBlocks link="/" src={dashboardImage} srcBlue={dashboardImageBlue} alt="Dashboard Icon" head="Dashboard" isDropdown={false}/>
           <NavigationBlocks link="/purchase" src={buy} alt="Dashboard Icon" srcBlue={buyBlue} head="Purchase Order" isDropdown={false}/>
           <NavigationBlocks link="/work" src={menu} alt="Dashboard Icon" head="Work Order" srcBlue={menuBlue} isDropdown={false}/>
-          <NavigationBlocks link="/inventory" src={shelf} alt="Dashboard Icon" head="Inventory" srcBlue={shelfBlue} isDropdown={false}/>
-          <NavigationBlocks link="/machine" src={automation} alt="Dashboard Icon" head="Machinery & Tools" srcBlue={automationBlue} isDropdown={false}/>
+          <NavigationBlocks link="/inventory" src={shelf} alt="Dashboard Icon" head="Inventory" srcBlue={shelfBlue} isDropdown={true} names={[{name:"Procurement",link:"/inventory/procurement"},{name:"Existing Stock",link:"/inventory/existing"},{name:"Client Side",link:"/inventory/client"},{name:"MSR side",link:"/inventory/msr"}]}/>
+          <NavigationBlocks link="/machine" src={automation} alt="Dashboard Icon" head="Machinery & Tools" srcBlue={automationBlue} isDropdown={true} names={[{name:"Bush Hammer Rolls",link:"/machine/bush"},{name:"Edge Cutting Blades",link:"/machine/edge"},{name:"CNC Cutting tools",link:"/machine/cnc"},{name:"Polish Bricks & Brushes",link:"/machine/polish"},{name:"",link:""}]}/>
           <NavigationBlocks link="/dispatch" src={correct} alt="Dashboard Icon" head="Dispatch" srcBlue={correctBlue} isDropdown={false}/>
           <NavigationBlocks link="/alerts" src={alert} alt="Dashboard Icon" head="Alerts"  isDropdown={false}/>
         </div>

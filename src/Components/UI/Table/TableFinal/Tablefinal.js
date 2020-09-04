@@ -19,10 +19,11 @@ export default class TableFinal extends React.Component {
         this.setState({setting:{...this.state.setting,search:e.target.value}})
     }
     render() {
+        console.log(this.props.data)
         return (
             <section className="final-table-type-1">
                 <Tablesetting drop={{value:this.state.setting.drop,change:this.onDropChange}} search={{value:this.state.setting.search,change:this.onSearchChange}} />
-                <Tableui />
+                <Tableui data={this.props.data} space={this.props.space}/>
                 <Tablebottom />
 
             </section>

@@ -8,6 +8,7 @@
 body{
   text-align: center;
   font-family: Circular,sans-serif;
+  overflow-x: hidden;
 }
 .World{
   display: flex;
@@ -20,7 +21,8 @@ body{
 }
 .right-body{
   width:80%;
-  min-height:100%;
+  min-height:150%;
+  height:auto;
   background-color:#F5F6F9;
   padding-top:30px;
 }

@@ -22,3 +22,30 @@
     height: 100%;
     width: 100%;
 }
+.navigation-blocks-opener{
+    display: flex;
+    align-items: center;
+}
+.navigation-blocks-dropdown ul li{
+    margin:10px 0px;
+    font-size: 18px;;
+}
+.navigation-blocks-dropdown ul li a{
+    color:inherit;
+    text-decoration: none;
+    color:#87909F;
+}
+.navigation-blocks-dropdown .active{
+    color:#3D85FD
+}
+.navigation-blocks-opener img{
+    margin-left:165px;
+    cursor: pointer;
+}
+.navigation-blocks-opener p{
+    color:#87909F;
+    font-size: 18px;;
+}
+.navigation-blocks-dropdown{
+    display: block;
+}

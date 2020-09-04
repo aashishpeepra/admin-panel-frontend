@@ -11,7 +11,7 @@ class Dashboard extends React.Component{
             this.setState({name:data.data.name})
         })
         .catch(err=>{
-            this.setState({name:"Data not coming"})
+            this.setState({name:"UNDER DEVELOPMENT"})
             console.log(err);
         })
     }

@@ -2,348 +2,51 @@ import React from "react";
 import "./Tableui.css";
 import Button from "../../Button/Button";
 export default (props)=>{
+    console.log(props)
     return (
         <table className="tableui">
             <thead>
                 <tr>
-                    <th>S.no</th>
-                    <th>Date</th>
-                    <th>Product id</th>
-                    <th>Customer name</th>
-                    <th>Customer POC</th>
-                    <th>POC no</th>
-                    <th>Product</th>
-                    <th>HSN</th>
-                    <th>No of slabs</th>
-                    <th>UOM</th>
-                    <th>MRP</th>
-                    <th>AMT</th>
-                    <th>Pay mode</th>
-                    <th>Action</th>
+                    {Object.keys(props.data[0]).map(each=><th>{props.data[0][each].name}</th>)}
+                 
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                     <td>1.</td>
-                    <td>12/7/20</td>
-                    <td>154556</td>
-                    <td>Elayamani</td>
-                    <td>123467152</td>
-                    <td>6725301925</td>
-                    <td>
-                        <div className="td-inner">
-                            Tiles
-                        </div>
-                        <div className="td-inner">
-                            Granites
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            #27
-                        </div>
-                        <div className="td-inner">
-                            #45
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            2
-                        </div>
-                        <div className="td-inner">
-                            4
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            &#x20B9;2700.0
-                        </div>
-                        <div className="td-inner">
-                            &#x20B9;3400.0
-                        </div>
-                    </td>
-                    <td>
-                        Rs. 5000
-                    </td>
-                    <td>
-                        Online
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            <Button text="View PDF" color="#FF9F5B" small={true} func={()=>alert("Clicked")}/>
-                        </div>
-                        <div className="td-inner">
-                        <Button text="Edit" small={true} color="#FF9F5B" func={()=>alert("Clicked")}/>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                     <td>1.</td>
-                    <td>12/7/20</td>
-                    <td>154556</td>
-                    <td>Elayamani</td>
-                    <td>123467152</td>
-                    <td>6725301925</td>
-                    <td>
-                        <div className="td-inner">
-                            Tiles
-                        </div>
-                        <div className="td-inner">
-                            Granites
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            #27
-                        </div>
-                        <div className="td-inner">
-                            #45
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            2
-                        </div>
-                        <div className="td-inner">
-                            4
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            &#x20B9;2700.0
-                        </div>
-                        <div className="td-inner">
-                            &#x20B9;3400.0
-                        </div>
-                    </td>
-                    <td>
-                        Rs. 5000
-                    </td>
-                    <td>
-                        Online
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            <Button text="View PDF" color="#FF9F5B" small={true} func={()=>alert("Clicked")}/>
-                        </div>
-                        <div className="td-inner">
-                        <Button text="Edit" small={true} color="#FF9F5B" func={()=>alert("Clicked")}/>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                     <td>1.</td>
-                    <td>12/7/20</td>
-                    <td>154556</td>
-                    <td>Elayamani</td>
-                    <td>123467152</td>
-                    <td>6725301925</td>
-                    <td>
-                        <div className="td-inner">
-                            Tiles
-                        </div>
-                        <div className="td-inner">
-                            Granites
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            #27
-                        </div>
-                        <div className="td-inner">
-                            #45
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            2
-                        </div>
-                        <div className="td-inner">
-                            4
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            &#x20B9;2700.0
-                        </div>
-                        <div className="td-inner">
-                            &#x20B9;3400.0
-                        </div>
-                    </td>
-                    <td>
-                        Rs. 5000
-                    </td>
-                    <td>
-                        Online
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            <Button text="View PDF" color="#FF9F5B" small={true} func={()=>alert("Clicked")}/>
-                        </div>
-                        <div className="td-inner">
-                        <Button text="Edit" small={true} color="#FF9F5B" func={()=>alert("Clicked")}/>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                     <td>1.</td>
-                    <td>12/7/20</td>
-                    <td>154556</td>
-                    <td>Elayamani</td>
-                    <td>123467152</td>
-                    <td>6725301925</td>
-                    <td>
-                        <div className="td-inner">
-                            Tiles
-                        </div>
-                        <div className="td-inner">
-                            Granites
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            #27
-                        </div>
-                        <div className="td-inner">
-                            #45
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            2
-                        </div>
-                        <div className="td-inner">
-                            4
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            &#x20B9;2700.0
-                        </div>
-                        <div className="td-inner">
-                            &#x20B9;3400.0
-                        </div>
-                    </td>
-                    <td>
-                        Rs. 5000
-                    </td>
-                    <td>
-                        Online
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            <Button text="View PDF" color="#FF9F5B" small={true} func={()=>alert("Clicked")}/>
-                        </div>
-                        <div className="td-inner">
-                        <Button text="Edit" small={true} color="#FF9F5B" func={()=>alert("Clicked")}/>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                     <td>1.</td>
-                    <td>12/7/20</td>
-                    <td>154556</td>
-                    <td>Elayamani</td>
-                    <td>123467152</td>
-                    <td>6725301925</td>
-                    <td>
-                        <div className="td-inner">
-                            Tiles
-                        </div>
-                        <div className="td-inner">
-                            Granites
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            #27
-                        </div>
-                        <div className="td-inner">
-                            #45
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            2
-                        </div>
-                        <div className="td-inner">
-                            4
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                        <div className="td-inner">
-                            1000 ft
-                        </div>
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            &#x20B9;2700.0
-                        </div>
-                        <div className="td-inner">
-                            &#x20B9;3400.0
-                        </div>
-                    </td>
-                    <td>
-                        Rs. 5000
-                    </td>
-                    <td>
-                        Online
-                    </td>
-                    <td>
-                        <div className="td-inner">
-                            <Button text="View PDF" color="#FF9F5B" small={true} func={()=>alert("Clicked")}/>
-                        </div>
-                        <div className="td-inner">
-                        <Button text="Edit" small={true} color="#FF9F5B" func={()=>alert("Clicked")}/>
-                        </div>
-                    </td>
-                </tr>
+                    {
+                        props.data.map(each=>{
+                            let result=[];
+                            let answer=[];
+                            let keys=Object.keys(each);
+                            keys.forEach(key=>{
+                                result=[];
+                                if(each[key].multiple)
+                                {
+                                each[key].value.forEach(item=>result.push(<div className="td-inner">{item}</div>));
+                                answer.push(<td>{result}</td>)
+                                }
+                                else if(key=="action")
+                                {
+                                    each[key].value.forEach(item=>result.push(item))
+                                    answer.push(<td>{result}</td>)
+                                }
+                                else
+                                {
+                                    answer.push(<td>{each[key].value}</td>)
+                                }
+                            })
+                        return Array.from(Array(5)).map(()=><tr>{answer}</tr>)
+
+                        })
+                       
+                       
+                    }
+                    
+         
             </tbody>
             <tfoot>
                 <tr>
                     <th>Total</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    {Array.from(Array(parseInt(props.space))).map(elem=><th></th>)}
                     <th>2</th>
                     <th>1000 ft</th>
                     <th>&#x20B9;2270.0</th>

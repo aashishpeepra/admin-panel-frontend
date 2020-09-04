@@ -14,33 +14,36 @@ export default class navigationBlocks extends React.Component {
     render() {
         console.log(this.props.link)
         return (
+            <React.Fragment>
             <div className="navigation-blocks">
                 <div className="navigation-blocks-image-holder">
                     {this.props.link===this.state.pathname?<img src={this.props.srcBlue} alt={this.props.alt} />:
                     <img src={this.props.src} alt={this.props.alt} />}
                 </div>
+               
                 {
-                    this.props.isDropdown ? (
-                        <React.Fragment>
-                            <div className="navigation-blocks-opener">
-                                <h3>{this.props.head}</h3>
-                                <img src={dropdown} alt="Dropdown Icon" />
-                            </div>
-                            {this.state.open ? (
-                                <div className="navigation-blocks-dropdown">
-                                    <ul>
-                                        {this.props.names.map(each => { return <NavLink key={each.link} to={each.link}>{each.name}</NavLink> })}
-                                    </ul>
-                                </div>
-                            ) : null}
-                        </React.Fragment>
-
-                    ) : (
-                            <NavLink to={this.props.link} >{this.props.head}</NavLink>
-                        )
+                    this.props.isDropdown?( <div className="navigation-blocks-opener">
+                    <NavLink onClick={()=>this.setState({open:!this.state.open})} to={this.props.names[0].link}>{this.props.head}</NavLink>
+                    <img src={dropdown} alt="Dropdown Icon" onClick={()=>this.setState({open:!this.state.open})} />
+                </div>):<NavLink to={this.props.link} >{this.props.head}</NavLink>
                 }
-
             </div>
+             {
+                this.props.isDropdown ? (
+                    <React.Fragment>
+                       
+                        {this.state.open ? (
+                            <div className="navigation-blocks-dropdown">
+                                <ul>
+                                    {this.props.names.map(each => { return<li> <NavLink key={each.link} to={each.link}>{each.name}</NavLink></li> })}
+                                </ul>
+                            </div>
+                        ) : null}
+                    </React.Fragment>
+
+                ) : null
+            }
+            </React.Fragment>
         )
     }
 }
