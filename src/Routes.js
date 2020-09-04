@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import { Switch, Route } from "react-router";
-import Existing from "./Containers/Inventory/Existing/Existing";
 const Dashboard = React.lazy(() => import("./Containers/Dashboard/dashboard"));
 const PurchaseOrder = React.lazy(()=>import("./Containers/PurchaseOrder/PurchaseOrder"));
 const WorkOrder = React.lazy(()=>import("./Containers/WorkOrder/WorkOrder"));
