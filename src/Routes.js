@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Switch, Route } from "react-router";
 const Dashboard = React.lazy(() => import("./Containers/Dashboard/dashboard"));
 const PurchaseOrder = React.lazy(()=>import("./Containers/PurchaseOrder/PurchaseOrder"));
-const WorkOrder = React.lazy(()=>import("./Containers/WorkOrder/WorkOrder"));
+const WorkOrder = React.lazy(()=>import("./Containers/WorkOrder/WorkOrder.js"));
 const Procurement = React.lazy(()=>import("./Containers/Inventory/Procurement/Procurement"));
 const Client = React.lazy(()=>import("./Containers/Inventory/Client/Client"));
 const Msr= React.lazy(()=>import("./Containers/Inventory/MSR/Msr"));
