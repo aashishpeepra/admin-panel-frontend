@@ -12,6 +12,7 @@ const Cnc = React.lazy(()=>import("./Containers/Machine/Cnc/Cnc"))
 const Edge = React.lazy(()=>import("./Containers/Machine/Edge/Edge"))
 const Polish = React.lazy(()=>import("./Containers/Machine/Polish/Polish"));
 const Alert = React.lazy(()=>import("./Containers/Alert/Alert"));
+const PurchaseForm=React.lazy(()=>import('./Containers/PurchaseOrder/PurchaseForm/PurchaseForm'));
 export default class Router extends React.Component {
     state = {
 
@@ -29,6 +30,7 @@ export default class Router extends React.Component {
                     <Route path="/inventory/client" component={Client}/>
                     <Route path="/inventory/existing" component={InventoryExisting}/>
                     <Route path="/inventory/procurement" component={Procurement}/>
+                    <Route exact path="/purchase/form" component={PurchaseForm}/>
                     <Route path="/purchase" component={PurchaseOrder} />
                     <Route path="/work" component={WorkOrder} />
                     <Route path="/inventory" component={Dashboard} />

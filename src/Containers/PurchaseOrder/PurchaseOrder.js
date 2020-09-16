@@ -40,7 +40,7 @@ export default class PurchaseOrder extends React.Component
             <section id="Purchase-Order">
                 <HeadingBlocks data={this.state.heads}/>
                 <HeadingBlocks data={this.state.heads}/>
-                <ButtonHolder text="+Create PO" func={()=>alert("Worked!")}/>
+                <ButtonHolder text="+Create PO" func={()=>this.props.history.push("/purchase/form")}/>
             
                 <TableFinal data={this.state.tableData} space={7}/>
             </section>
